@@ -20,7 +20,7 @@ pipelineConfig:
             - --context=/workspace/source
             - --dockerfile=/workspace/source/Dockerfile
             - --destination=gcr.io/REPLACE_ME_DOCKER_REGISTRY_ORG/REPLACE_ME_APP_NAME:${inputs.params.version}
-            - --cache-repo=gcr.io/$ORG/cache
+            - --cache-repo=gcr.io/REPLACE_ME_DOCKER_REGISTRY_ORG/cache
             command: /kaniko/executor
             dir: /workspace/source
             image: gcr.io/kaniko-project/executor:9912ccbf8d22bbafbf971124600fbb0b13b9cbd6
@@ -52,7 +52,7 @@ pipelineConfig:
             - --context=/workspace/source
             - --dockerfile=/workspace/source/Dockerfile
             - --destination=gcr.io/REPLACE_ME_DOCKER_REGISTRY_ORG/REPLACE_ME_APP_NAME:${inputs.params.version}
-            - --cache-repo=gcr.io/$ORG/cache
+            - --cache-repo=gcr.io/REPLACE_ME_DOCKER_REGISTRY_ORG/cache
             command: /kaniko/executor
             dir: /workspace/source
             image: gcr.io/kaniko-project/executor:9912ccbf8d22bbafbf971124600fbb0b13b9cbd6
